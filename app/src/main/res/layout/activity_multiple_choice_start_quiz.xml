@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MultipleChoiceStartQuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#040147">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="379dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="GRAMMAR"
+            android:textColor="#ffffff"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="backToMenu"
+            app:srcCompat="@drawable/close_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:orientation="horizontal"
+        android:background="#2BCCD7">
+
+        <LinearLayout
+            android:layout_width="129dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="18dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/countdown" />
+
+                <TextView
+                    android:id="@+id/txtTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---:--"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textview_title_border"
+                    android:gravity="center"
+                    android:text="Total: 50"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/textview_title_border"
+                    android:gravity="center"
+                    android:text="Current: 50"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="88dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_bg_round"
+                    android:text="Next"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/notebook" />
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="300dp"
+                android:layout_height="230dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text=""
+                android:scrollbars="vertical"
+                android:textSize="23dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_bg_round"
+                android:text="A"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btnB"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_bg_round"
+                android:text="B"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_bg_round"
+                android:text="C"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@drawable/button_bg_round"
+                android:text="D"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

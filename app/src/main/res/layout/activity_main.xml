@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#040147"
+        android:layout_gravity="center"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="550dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="         PRACTICE ENGLISH"
+            android:textColor="#ffffff"
+            android:textSize="28dp" />
+
+        <ImageView
+
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="closeApplication"
+            app:srcCompat="@drawable/close_icon"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <Button
+                android:id="@+id/btnQuiz"
+                android:layout_width="203dp"
+                android:layout_height="139dp"
+                android:alpha="0"
+                android:onClick="goToMultipleChoice" />
+
+            <Button
+                android:id="@+id/btnVocabulary"
+                android:layout_width="242dp"
+                android:layout_height="139dp"
+                android:layout_weight="1"
+                android:onClick="goToVocabulary"
+                android:alpha="0" />
+
+            <Button
+                android:id="@+id/btnFavoriteVocabulary"
+                android:layout_width="231dp"
+                android:layout_height="139dp"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:onClick="goToMyWord"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <Button
+                android:id="@+id/btnListening"
+                android:layout_width="201dp"
+                android:layout_height="139dp"
+                android:onClick="goToListening"
+                android:alpha="0" />
+
+            <Button
+                android:id="@+id/btnScore"
+                android:layout_width="231dp"
+                android:layout_height="139dp"
+                android:layout_weight="1"
+                android:onClick="goToScore"
+                android:alpha="0" />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="231dp"
+                android:layout_height="139dp"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:onClick="goToAbout" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

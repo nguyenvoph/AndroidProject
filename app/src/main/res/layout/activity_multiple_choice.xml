@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultipleChoiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#040147">
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="487dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="MULTIPLE CHOICE"
+            android:textColor="#ffffff"
+            android:textSize="28dp" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="backToMenu"
+            app:srcCompat="@drawable/close_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:orientation="vertical"
+        android:background="#2BCCD7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="148dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="95dp"
+                android:gravity="fill"
+                android:text="Number Of Question"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerQues"
+                android:layout_width="400dp"
+                android:layout_height="37dp"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:entries="@array/multiple_choice_category" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="95dp"
+                android:gravity="fill"
+                android:text="Difficult"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerDiff"
+                android:layout_width="400dp"
+                android:layout_height="37dp"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:entries="@array/multiple_choice_difficult" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="doQuiz"
+                app:srcCompat="@drawable/start_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hciproject.datnh.englishquiz">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:largeHeap="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MultipleChoiceActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MultipleChoiceStartQuizActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MyWordActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VocabularyActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ListeningActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ScoreActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>
